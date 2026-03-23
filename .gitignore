@@ -1,0 +1,22 @@
+# Environment variables
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+
+# Sensitive JSON files
+secrets.json
+credentials.json
+config.json
+service-account.json
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db

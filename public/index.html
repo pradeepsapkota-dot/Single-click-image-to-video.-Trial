@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Video Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Text-to-Video Generator</h1>
+        </header>
+        
+        <div class="input-section">
+            <textarea id="prompt" placeholder="Describe the video you want to generate... e.g., 'A cow riding a unicycle on Mars'"></textarea>
+            <button id="generateBtn">Generate Video</button>
+        </div>
+        
+        <div id="status" class="status hidden">
+            <div class="spinner"></div>
+            <p>Starting generation...</p>
+        </div>
+        
+        <div id="videos" class="videos hidden">
+            <div class="video-container">
+                <h3>Widescreen (16:9)</h3>
+                <div id="widescreen"></div>
+            </div>
+            <div class="video-container">
+                <h3>Vertical (9:16)</h3>
+                <div id="vertical"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
